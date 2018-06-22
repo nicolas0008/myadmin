@@ -18,12 +18,12 @@ export class RoundProgressbarComponent implements OnInit {
 
 
     public radius = 250;
-    public stroke = "20";
+    public stroke = '20';
     public semicircle = false;
     public rounded = true;
     public clockwise = false;
     public responsive = true;
-    public duration = "800";
+    public duration = '800';
     public animation = 'easeInOutQuart';
 
     constructor() { }
@@ -31,8 +31,8 @@ export class RoundProgressbarComponent implements OnInit {
     ngOnInit() {
     }
     getOverlayStyle() {
-        let isSemi = this.semicircle;
-        let transform = (isSemi ? '' : 'translateY(-50%) ') + 'translateX(-50%)';
+        const isSemi = this.semicircle;
+        const transform = (isSemi ? '' : 'translateY(-50%) ') + 'translateX(-50%)';
 
         return {
             'top': isSemi ? 'auto' : '50%',

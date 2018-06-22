@@ -12,5 +12,6 @@ export class CardsComponent implements OnInit {
 
     ngOnInit() {
     }
+    // tslint:disable-next-line:member-ordering
     cardsHelpers: any = CARDS_HELPERS;
 }

@@ -14,14 +14,15 @@ export class BarGraphComponent implements OnInit {
     ngOnInit() {
         setTimeout(() => {
             this.createBarGraph();
-        }, 500)
+        }, 500);
     }
 
     createBarGraph() {
+        // tslint:disable-next-line:no-unused-expression
         new Chart('dash-bar-graph', {
             type: 'bar',
             data: {
-                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
                 datasets: [
                     {
                         backgroundColor: 'rgba(92, 107, 192, .7)',
@@ -73,6 +74,6 @@ export class BarGraphComponent implements OnInit {
                     text: 'SALES GRAPH'
                 }
             }
-        })
+        });
     }
 }

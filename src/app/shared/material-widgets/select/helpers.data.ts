@@ -36,7 +36,8 @@ export class selectComponent implements OnInit {
 	</mat-form-field>
 
 	`.trim(),
-}
+};
+
 export const Messages: Array<any> = [
     { from: 'codetok', subject: 'client', content: 'hi there' },
     { from: 'client', subject: 'codetok', content: 'yes' },

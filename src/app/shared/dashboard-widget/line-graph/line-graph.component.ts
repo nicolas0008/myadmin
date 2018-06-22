@@ -13,13 +13,14 @@ export class LineGraphComponent implements OnInit {
     ngOnInit() {
         setTimeout(() => {
             this.createLineChart();
-        }, 500)
+        }, 500);
     }
     createLineChart() {
+        // tslint:disable-next-line:no-unused-expression
         new Chart('line-graph', {
             type: 'line',
             data: {
-                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", 'Oct'],
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
                 datasets: [{
                     backgroundColor: 'rgba(92, 107, 192, 0.36)',
                     borderColor: 'rgba(92, 107, 192,.5)',
@@ -48,7 +49,7 @@ export class LineGraphComponent implements OnInit {
                     text: 'ASSIGNMENTS GRAPH '
                 }
             }
-        })
+        });
     }
 
 }

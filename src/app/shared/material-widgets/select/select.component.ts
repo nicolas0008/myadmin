@@ -9,6 +9,7 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
         return !!(control && control.invalid && (control.dirty || control.touched || isSubmitted));
     }
 }
+
 @Component({
     selector: 'app-select',
     templateUrl: './select.component.html',
@@ -20,7 +21,7 @@ export class SelectComponent implements OnInit {
     SelectHelpers: any = select_HELPERS;
     links = Links;
     selectedValue;
-    showMultiListCode: boolean = false;
+    showMultiListCode = false;
     messages = Messages;
     select = 'option2';
     selected = new FormControl('valid', [

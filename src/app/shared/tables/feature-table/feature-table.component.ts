@@ -38,9 +38,9 @@ export class FeatureTableComponent implements OnInit {
         if (this.selection.isEmpty()) { return false; }
 
         if (this.filter.nativeElement.value) {
-            return this.selection.selected.length == this.dataSource.renderedData.length;
+            return this.selection.selected.length === this.dataSource.renderedData.length;
         } else {
-            return this.selection.selected.length == this.exampleDatabase.data.length;
+            return this.selection.selected.length === this.exampleDatabase.data.length;
         }
     }
 

@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation, Input, Output, EventEmitter, ViewChild } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, ViewChild } from '@angular/core';
 import { ResponsiveTableHelpers } from './helpers.data';
 import { MatPaginator } from '@angular/material';
 
@@ -25,24 +25,28 @@ export class ResponsiveTableComponent implements OnInit {
     @Output() page = new EventEmitter();
     @Output() sort = new EventEmitter();
     @Output() dup = new EventEmitter();
+
     constructor() {
     }
 
     ngOnInit() {
         this.getRows();
     }
+
     next(event) {
         this.rows = [];
-        for (var i = 1 * event.pageIndex * event.pageSize; i < event.pageSize + event.pageIndex * event.pageSize; i++) {
+        for (let i = 1 * event.pageIndex * event.pageSize; i < event.pageSize + event.pageIndex * event.pageSize; i++) {
             this.rows = [...this.rows, this.helpers.rows[i]];
         }
     }
+
     getRows() {
-        for (var i = 0; i < this.pageSize; i++) {
+        for (let i = 0; i < this.pageSize; i++) {
             this.rows = [...this.rows, this.helpers.rows[i]];
         }
         this.pageLength = this.helpers.rows.length;
     }
+
     sortData(val) {
     }
 }

@@ -2,10 +2,10 @@ export const DATEPICKER_HELPERS: any = {
 
     tsSourceDatepicker: `
 import { MatDatepickerModule } from '@angular/material';
-	
+
 		@NgModule({
 		  imports: [
-		   MatDatepickerModule  
+		   MatDatepickerModule
 		})
 		export class AppModule { }
 
@@ -28,7 +28,6 @@ export class DatepickerComponent implements OnInit {
 	events: string[] = [];
 	myFilter = (d: Date): boolean => {
 		const day = d.getDay();
-		
 		return day !== 0 && day !== 6;
 	}
 }
@@ -41,4 +40,4 @@ export class DatepickerComponent implements OnInit {
 </mat-form-field>
 	`.trim(),
 
-}
+};

@@ -7,7 +7,7 @@ import { MatInputModule } from '@angular/material';
 		   MatInputModule
 		})
 		export class AppModule { }
-		
+
 import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-input',
@@ -32,7 +32,8 @@ export class inputComponent implements OnInit {
 	</form>
 
 	`.trim(),
-}
+};
+
 export const Messages: Array<any> = [
     { from: 'codetok', subject: 'client', content: 'hi there' },
     { from: 'client', subject: 'codetok', content: 'yes' },

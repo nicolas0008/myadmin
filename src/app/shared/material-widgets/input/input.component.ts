@@ -10,6 +10,7 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
     }
 }
 const EMAIL_REGEX = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
 @Component({
     selector: 'app-input',
     templateUrl: './input.component.html',
@@ -19,7 +20,7 @@ export class InputComponent implements OnInit {
     InputHelpers: any = input_HELPERS;
     links = Links;
     selectedValue;
-    showMultiListCode: boolean = false;
+    showMultiListCode = false;
     messages = Messages;
     value = 'Clear me';
     emailFormControl = new FormControl('', [

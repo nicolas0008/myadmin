@@ -24,6 +24,7 @@ export class SliderComponent implements OnInit {
     ngOnInit() {
     }
 
+    // tslint:disable-next-line:member-ordering
     sliderHelpers: any = SLIDER_HELPERS;
 
 }

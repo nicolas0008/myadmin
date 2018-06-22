@@ -17,5 +17,6 @@ export class SlidetoggleComponent implements OnInit {
     ngOnInit() {
     }
 
+    // tslint:disable-next-line:member-ordering
     slidetoggleHelpers: any = SLIDETOGGLE_HELPERS;
 }

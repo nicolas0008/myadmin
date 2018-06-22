@@ -12,6 +12,8 @@ export class IconsComponent implements OnInit {
 
     ngOnInit() {
     }
+
+    // tslint:disable-next-line:member-ordering
     iconHelpers: any = ICON_HELPERS;
 
 }

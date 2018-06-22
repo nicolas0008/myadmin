@@ -1,7 +1,6 @@
 export const CARDS_HELPERS: any = {
 
     tsSourceCards: `
-
         import { MatCardModule } from '@angular/material/button';
 
           @NgModule({

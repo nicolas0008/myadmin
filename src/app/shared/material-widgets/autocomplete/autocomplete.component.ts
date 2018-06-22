@@ -29,8 +29,11 @@ export class AutocompleteComponent implements OnInit {
     }
     ngOnInit() {
     }
+    // tslint:disable-next-line:member-ordering
     stateCtrl: FormControl;
+    // tslint:disable-next-line:member-ordering
     filteredStates: Observable<any[]>;
+    // tslint:disable-next-line:member-ordering
     states: any[] = [
         {
             name: 'Arkansas',
@@ -50,5 +53,6 @@ export class AutocompleteComponent implements OnInit {
         }
     ];
 
+    // tslint:disable-next-line:member-ordering
     autocompleteHelpers: any = AUTOCOMPLETE_HELPERS;
 }

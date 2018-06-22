@@ -35,4 +35,4 @@ export class SliderComponent implements OnInit {
 <mat-slider></mat-slider>
 	`.trim(),
 
-}
+};

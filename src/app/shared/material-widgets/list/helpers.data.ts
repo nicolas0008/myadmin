@@ -7,7 +7,7 @@ export const LIST_HELPERS: any = {
 		   MatListModule
 		})
 		export class AppModule { }
-		
+
 		import { Component, OnInit } from '@angular/core';
 		@Component({
 			  selector: 'app-list',
@@ -34,7 +34,8 @@ export const LIST_HELPERS: any = {
 		Options selected: {{shoes.selectedOptions.selected.length}}
 	</p>
 	`.trim(),
-}
+};
+
 export const Messages: Array<any> = [
     { from: 'codetok', subject: 'client', content: 'hi there' },
     { from: 'client', subject: 'codetok', content: 'yes' },
@@ -42,5 +43,3 @@ export const Messages: Array<any> = [
 ];
 
 export const Links: Array<String> = ['/home', '/admin'];
-
-	//export const shoetypes: Array<any> = ['Boots', 'Sneaker', 'Casual'];

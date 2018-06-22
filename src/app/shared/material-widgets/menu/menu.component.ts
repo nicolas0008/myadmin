@@ -13,6 +13,7 @@ export class MenuComponent implements OnInit {
     ngOnInit() {
     }
 
+    // tslint:disable-next-line:member-ordering
     menuHelpers: any = MENU_HELPERS;
 
 }

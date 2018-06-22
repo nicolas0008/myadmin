@@ -12,7 +12,7 @@ export class DatepickerComponent implements OnInit {
 
     startDate = new Date(1990, 0, 1);
     date = new FormControl(new Date());
-    serializedDate = new FormControl((new Date()).toISOString())
+    serializedDate = new FormControl((new Date()).toISOString());
     minDate = new Date(2000, 0, 1);
     maxDate = new Date(2020, 0, 1);
     events: string[] = [];
@@ -31,5 +31,6 @@ export class DatepickerComponent implements OnInit {
     ngOnInit() {
     }
 
+    // tslint:disable-next-line:member-ordering
     datepickerHelpers: any = DATEPICKER_HELPERS;
 }
