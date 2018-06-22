@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'cdk-sales-list',
+    selector: 'app-sales-list',
     templateUrl: './sales-list.component.html',
     styleUrls: ['./sales-list.component.scss']
 })
 export class SalesListComponent implements OnInit {
 
-    public showLoader: boolean = false;
+    public showLoader = false;
     public sales = [
         {
             companyIcon: 'https://www.bugsplat.com/images/icons/angular_icon_blue.png',
@@ -24,6 +24,7 @@ export class SalesListComponent implements OnInit {
             watch: false,
         },
         {
+            // tslint:disable-next-line:max-line-length
             companyIcon: 'https://crunchbase-production-res.cloudinary.com/image/upload/c_lpad,h_256,w_256,f_jpg/v1481031537/j9c8urpwe7uabwmt2qau.png',
             companyName: 'Ionic',
             star: false,
@@ -37,7 +38,7 @@ export class SalesListComponent implements OnInit {
             watch: false,
             fork: '22',
         }
-    ]
+    ];
     constructor() { }
 
     ngOnInit() {
@@ -47,7 +48,7 @@ export class SalesListComponent implements OnInit {
         this.showLoader = true;
         setTimeout(() => {
             this.showLoader = false;
-        }, 2000)
+        }, 2000);
     }
 
 }

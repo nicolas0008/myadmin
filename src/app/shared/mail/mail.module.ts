@@ -22,7 +22,7 @@ import {
     MatSnackBarModule
 } from '@angular/material';
 import { FormsModule } from '@angular/forms';
-import { CoreModule } from '../core/core.module';
+import { CoreModule } from '../../modules/core/core.module';
 import { CommonModule } from '@angular/common';
 import { SearchbarComponent } from './searchbar/searchbar.component';
 

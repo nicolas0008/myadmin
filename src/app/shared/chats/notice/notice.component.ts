@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'stbui-notice',
+    selector: 'app-notice',
     templateUrl: './notice.component.html',
     styleUrls: ['./notice.component.scss'],
 })

@@ -10,7 +10,7 @@ export class ChatListComponent implements OnInit {
     chats: any[];
     activeChat: any;
 
-    chatName: string = 'demo';
+    chatName = 'demo';
 
     constructor(@Inject('ChatsService') private service) {
     }
@@ -27,23 +27,23 @@ export class ChatListComponent implements OnInit {
     }
 
     createChat() {
-        let d = {
-            "picture": "assets/profile.png",
-            "name": this.chatName,
-            "messages": [
+        const d = {
+            'picture': 'assets/profile.png',
+            'name': this.chatName,
+            'messages': [
                 {
-                    "message": "this is Angular 2 Exchange group",
-                    "when": 1,
-                    "who": "me"
+                    'message': 'this is Angular 2 Exchange group',
+                    'when': 1,
+                    'who': 'me'
                 },
                 {
-                    "message": "Recommended next Angular 2 What open source projects?",
-                    "when": 1,
-                    "who": "partner"
+                    'message': 'Recommended next Angular 2 What open source projects?',
+                    'when': 1,
+                    'who': 'partner'
                 }
             ],
-            "lastMessageTime": 1,
-            "lastMessage": "Technology Exchange"
+            'lastMessageTime': 1,
+            'lastMessage': 'Technology Exchange'
         };
         this.service.createChat(d);
     }

@@ -15,7 +15,7 @@ export class ChatComponent {
     @Output() onSendChat = new EventEmitter();
 
     newMessage: string;
-    avatar: string = 'assets/user-image.jpg';
+    avatar = 'assets/user-image.jpg';
 
     animal: string;
     name: string;
@@ -25,7 +25,7 @@ export class ChatComponent {
 
     onSendTriggered() {
         if (this.newMessage) {
-            let chat = {
+            const chat = {
                 message: this.newMessage,
                 when: new Date(),
                 who: 'me'

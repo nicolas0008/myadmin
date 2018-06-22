@@ -1,11 +1,11 @@
-import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit, AfterViewInit } from '@angular/core';
 
 @Component({
-    selector: 'cdk-mail-toolbar',
+    selector: 'app-mail-toolbar',
     templateUrl: './toolbar.component.html',
     styleUrls: ['./toolbar.component.scss']
 })
-export class ToolbarComponent implements OnInit {
+export class ToolbarComponent implements OnInit, AfterViewInit {
 
     @Input() mail;
     @Input() itemCount;
@@ -13,10 +13,12 @@ export class ToolbarComponent implements OnInit {
     @Output() onCheck = new EventEmitter();
     constructor() { }
     @Input() checked;
+
     ngOnInit() {
     }
     ngAfterViewInit() {
     }
+
     onForwardTriggered() {
         // this.shownMailDetail = null;
         this.onForward.emit(true);

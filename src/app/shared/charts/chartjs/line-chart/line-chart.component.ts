@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 declare const Chart;
+
 @Component({
     selector: 'app-line-chart',
     templateUrl: './line-chart.component.html',
@@ -13,13 +14,15 @@ export class LineChartComponent implements OnInit {
     ngOnInit() {
         setTimeout(() => {
             this.createChart();
-        }, 400)
+        }, 400);
     }
+
     createChart() {
+        // tslint:disable-next-line:no-unused-expression
         new Chart('chart-2', {
             type: 'line',
             data: {
-                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
                 datasets: [
                     {
                         backgroundColor: '#7E57C2',
@@ -51,7 +54,6 @@ export class LineChartComponent implements OnInit {
                     text: 'SALES GRAPH'
                 }
             }
-        })
+        });
     }
-
 }

@@ -3,7 +3,7 @@ import { AgmMap, AgmCoreModule } from '@agm/core';
 import { MapsAPILoader } from '@agm/core';
 
 @Component({
-    selector: 'cdk-google-map',
+    selector: 'app-google-map',
     templateUrl: './google-map.component.html',
     styleUrls: ['./google-map.component.scss']
 })

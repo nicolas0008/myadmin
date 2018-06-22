@@ -1,11 +1,11 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { MatDialog, MatSnackBar } from '@angular/material';
-import { MediaChange, ObservableMedia } from "@angular/flex-layout";
+import { MediaChange, ObservableMedia } from '@angular/flex-layout';
 
 import { ComposeComponent } from '../compose/compose.component';
 
 @Component({
-    selector: 'cdk-mail',
+    selector: 'app-mail',
     templateUrl: './mail.component.html',
     styleUrls: ['./mail.component.scss']
 })
@@ -15,7 +15,7 @@ export class MailComponent implements OnInit {
     shownMails = [];
     shownMailDetail;
 
-    height: string = '500px';
+    height = '500px';
     constructor(public composeDialog: MatDialog,
         private snackBar: MatSnackBar,
         @Inject('mailService') private service,
@@ -31,8 +31,8 @@ export class MailComponent implements OnInit {
     }
 
     updateHieght() {
-        let body = document.body, html = document.documentElement;
-        let h = Math.max(body.scrollHeight, body.offsetHeight,
+        const body = document.body, html = document.documentElement;
+        const h = Math.max(body.scrollHeight, body.offsetHeight,
             html.clientHeight, html.scrollHeight, html.offsetHeight) - 66;
         this.height = h + 'px';
     }
@@ -44,7 +44,7 @@ export class MailComponent implements OnInit {
         });
     }
     setMailStatus(value) {
-        for (let mail of this.shownMails) {
+        for (const mail of this.shownMails) {
             mail.checked = value;
         }
     }

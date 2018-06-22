@@ -7,7 +7,7 @@ import { AUTOCOMPLETE_HELPERS } from './helpers.data';
 
 
 @Component({
-    selector: 'cdk-autocomplete',
+    selector: 'app-autocomplete',
     templateUrl: './autocomplete.component.html',
     styleUrls: ['./autocomplete.component.scss'],
 

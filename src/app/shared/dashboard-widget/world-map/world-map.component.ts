@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 
 declare const AmCharts;
 @Component({
-    selector: 'cdk-world-map',
+    selector: 'app-world-map',
     templateUrl: './world-map.component.html',
     styleUrls: ['./world-map.component.scss']
 })
@@ -12,19 +12,19 @@ export class WorldMapComponent implements OnInit {
     constructor() { }
 
     ngOnInit() {
-        var map = AmCharts.makeChart("chartdiv", {
+        const map = AmCharts.makeChart('chartdiv', {
 
-            "type": "map",
-            "theme": "light",
-            "projection": "miller",
+            'type': 'map',
+            'theme': 'light',
+            'projection': 'miller',
 
-            "dataProvider": {
-                "map": "worldLow",
-                "getAreasFromMap": true
+            'dataProvider': {
+                'map': 'worldLow',
+                'getAreasFromMap': true
             },
-            "areasSettings": {
-                "autoZoom": true,
-                "selectedColor": "#CC0000"
+            'areasSettings': {
+                'autoZoom': true,
+                'selectedColor': '#CC0000'
             },
         });
     }

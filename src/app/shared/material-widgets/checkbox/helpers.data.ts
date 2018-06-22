@@ -12,7 +12,7 @@ import { MatCheckboxModule } from '@angular/material'
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'cdk-checkbox',
+  selector: 'app-checkbox',
   templateUrl: './checkbox.component.html',
   styleUrls: ['./checkbox.component.scss']
 })

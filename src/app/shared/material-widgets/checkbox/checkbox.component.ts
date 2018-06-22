@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CHECKBOX_HELPERS } from './helpers.data';
 
 @Component({
-    selector: 'cdk-checkbox',
+    selector: 'app-checkbox',
     templateUrl: './checkbox.component.html',
     styleUrls: ['./checkbox.component.scss']
 })

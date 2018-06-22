@@ -3,7 +3,7 @@ import { ExampleDatabase, ExampleDataSource } from './helpers.data';
 import { Observable } from 'rxjs/Observable';
 
 @Component({
-    selector: 'cdk-filter-table',
+    selector: 'app-filter-table',
     templateUrl: './filter-table.component.html',
     styleUrls: ['./filter-table.component.scss']
 })

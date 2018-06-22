@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SLIDER_HELPERS } from './helpers.data';
 @Component({
-    selector: 'cdk-slider',
+    selector: 'app-slider',
     templateUrl: './slider.component.html',
     styleUrls: ['./slider.component.scss']
 })

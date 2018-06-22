@@ -11,7 +11,7 @@ import {
 } from '@angular/animations';
 // import { fadeAnimation } from '../animation';
 @Component({
-    selector: 'cdk-buttons',
+    selector: 'app-buttons',
     templateUrl: './buttons.component.html',
     styleUrls: ['./buttons.component.scss'],
     // animations: [fadeAnimation]

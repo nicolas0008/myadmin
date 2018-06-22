@@ -9,6 +9,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { PieChartComponent } from './pie-chart/pie-chart.component';
 import { SunburstChartComponent } from './sunburst-chart/sunburst-chart.component';
 import { HistoricalBarChartComponent } from './historical-bar-chart/historical-bar-chart.component';
+
 @NgModule({
     imports: [
         CommonModule,

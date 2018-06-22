@@ -1,5 +1,6 @@
 import { Component, ElementRef, ViewChild, OnInit, DoCheck } from '@angular/core';
 import { single, multi } from './data';
+
 @Component({
     selector: 'app-area-chart',
     templateUrl: './area-chart.component.html',
@@ -29,9 +30,10 @@ export class AreaChartComponent implements OnInit, DoCheck {
     public view: any[] = [];
     public width: number;
 
+    constructor() { }
 
     ngDoCheck() {
-        if (this.el.nativeElement.offsetWidth != this.width) {
+        if (this.el.nativeElement.offsetWidth !== this.width) {
             this.width = this.el.nativeElement.offsetWidth;
             this.ngOnInit();
         }
@@ -39,13 +41,10 @@ export class AreaChartComponent implements OnInit, DoCheck {
 
     ngOnInit() {
         this.view = [this.el.nativeElement.offsetWidth, 235];
-        Object.assign(this, { single, multi })
+        Object.assign(this, { single, multi });
     }
 
     onSelect(event) {
         console.log(event);
     }
-    constructor() { }
-
-
 }

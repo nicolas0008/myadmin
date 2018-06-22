@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 declare const Chart;
 
 @Component({
@@ -12,17 +12,18 @@ export class PieChartComponent implements OnInit {
     ngOnInit() {
         setTimeout(() => {
             this.createChart();
-        }, 400)
+        }, 400);
     }
-    createChart() {
 
+    createChart() {
+        // tslint:disable-next-line:no-unused-expression
         new Chart('piechart', {
             type: 'doughnut',
             data: {
                 labels: ['Data '],
                 datasets: [{
 
-                    data: [46.97, 46.91, 24.56,],
+                    data: [46.97, 46.91, 24.56],
 
                     backgroundColor: [
                         'rgba(255, 99, 132,.7)',
@@ -52,8 +53,7 @@ export class PieChartComponent implements OnInit {
                     text: 'LEAD GRAPH'
                 }
             }
-
-        })
+        });
     }
 }
 

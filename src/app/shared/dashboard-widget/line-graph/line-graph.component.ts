@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Chart } from 'chart.js';
 
 @Component({
-    selector: 'cdk-line-graph',
+    selector: 'app-line-graph',
     templateUrl: './line-graph.component.html',
     styleUrls: ['./line-graph.component.scss']
 })

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from './user';
 @Component({
-    selector: 'cdk-template-driven-forms',
+    selector: 'app-template-driven-forms',
     templateUrl: './template-driven-forms.component.html',
     styleUrls: ['./template-driven-forms.component.scss']
 })

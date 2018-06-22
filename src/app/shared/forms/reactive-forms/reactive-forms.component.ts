@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { EmailValidator } from '@angular/forms';
 @Component({
-    selector: 'cdk-reactive-forms',
+    selector: 'app-reactive-forms',
     templateUrl: './reactive-forms.component.html',
     styleUrls: ['./reactive-forms.component.scss']
 })

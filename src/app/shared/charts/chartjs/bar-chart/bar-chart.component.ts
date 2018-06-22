@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-
 declare const Chart;
+
 @Component({
     selector: 'app-bar-chart',
     templateUrl: './bar-chart.component.html',
@@ -13,13 +13,15 @@ export class BarChartComponent implements OnInit {
     ngOnInit() {
         setTimeout(() => {
             this.createChart();
-        }, 400)
+        }, 400);
     }
+
     createChart() {
+        // tslint:disable-next-line:no-unused-expression
         new Chart('chart-0', {
             type: 'bar',
             data: {
-                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
                 datasets: [
                     {
                         backgroundColor: '#D32F2F' + 'BF',
@@ -71,6 +73,6 @@ export class BarChartComponent implements OnInit {
                     text: 'SALES GRAPH'
                 }
             }
-        })
+        });
     }
 }

@@ -1,12 +1,12 @@
-import { Component, ElementRef, ViewChild, OnInit } from '@angular/core';
+import { Component, ElementRef, ViewChild, OnInit, DoCheck } from '@angular/core';
 import { single, multi } from './data';
 
 @Component({
-    selector: 'cdk-doughnut-chart',
+    selector: 'app-doughnut-chart',
     templateUrl: './doughnut-chart.component.html',
     styleUrls: ['./doughnut-chart.component.scss']
 })
-export class DoughnutChartComponent implements OnInit {
+export class DoughnutChartComponent implements OnInit, DoCheck {
 
     @ViewChild('ele') el: ElementRef;
 
@@ -29,8 +29,9 @@ export class DoughnutChartComponent implements OnInit {
     constructor() {
 
     }
+
     ngDoCheck() {
-        if (this.el.nativeElement.offsetWidth != this.width) {
+        if (this.el.nativeElement.offsetWidth !== this.width) {
             this.width = this.el.nativeElement.offsetWidth;
             this.ngOnInit();
         }
@@ -38,11 +39,10 @@ export class DoughnutChartComponent implements OnInit {
 
     ngOnInit() {
         this.view = [this.el.nativeElement.offsetWidth, 235];
-        Object.assign(this, { single, multi })
+        Object.assign(this, { single, multi });
     }
 
     onSelect(event) {
         console.log(event);
     }
-
 }

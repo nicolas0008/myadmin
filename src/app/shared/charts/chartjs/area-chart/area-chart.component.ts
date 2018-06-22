@@ -13,15 +13,15 @@ export class AreaChartComponent implements OnInit {
     ngOnInit() {
         setTimeout(() => {
             this.createChart();
-        }, 400)
+        }, 400);
     }
+
     createChart() {
-
-
+        // tslint:disable-next-line:no-unused-expression
         new Chart('areachart', {
             type: 'line',
             data: {
-                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
                 datasets: [{
                     backgroundColor: 'rgba(216, 27, 96, 0.36)',
                     borderColor: 'rgb(54, 162, 235)',
@@ -50,7 +50,7 @@ export class AreaChartComponent implements OnInit {
                     text: 'LEAD GRAPH'
                 }
             }
-        })
+        });
     }
 
 }

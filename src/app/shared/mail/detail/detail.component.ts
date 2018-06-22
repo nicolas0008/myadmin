@@ -1,7 +1,7 @@
 import { Component, Input, Output, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'cdk-detail',
+    selector: 'app-detail',
     templateUrl: './detail.component.html',
     styleUrls: ['./detail.component.scss']
 })

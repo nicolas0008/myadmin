@@ -5,7 +5,7 @@ import { SelectionModel } from '@angular/cdk/collections';
 import { Observable } from 'rxjs/Observable';
 
 @Component({
-    selector: 'cdk-feature-table',
+    selector: 'app-feature-table',
     templateUrl: './feature-table.component.html',
     styleUrls: ['./feature-table.component.scss']
 })

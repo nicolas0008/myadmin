@@ -3,7 +3,7 @@ import { ResponsiveTableHelpers } from './helpers.data';
 import { MatPaginator } from '@angular/material';
 
 @Component({
-    selector: 'cdk-responsive-table',
+    selector: 'app-responsive-table',
     templateUrl: './responsive-table.component.html',
     styleUrls: ['./responsive-table.component.scss']
 })

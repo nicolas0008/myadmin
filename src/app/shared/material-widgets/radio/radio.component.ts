@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { RADIO_HELPERS } from './helpers.data';
 
 @Component({
-    selector: 'cdk-radio',
+    selector: 'app-radio',
     templateUrl: './radio.component.html',
     styleUrls: ['./radio.component.scss']
 })

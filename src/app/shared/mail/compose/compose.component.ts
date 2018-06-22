@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialogRef } from '@angular/material';
 
 @Component({
-    selector: 'cdk-compose',
+    selector: 'app-compose',
     templateUrl: './compose.component.html',
     styleUrls: ['./compose.component.scss']
 })

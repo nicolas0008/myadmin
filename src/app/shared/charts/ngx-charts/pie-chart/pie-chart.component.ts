@@ -1,11 +1,12 @@
-import { Component, Input, ElementRef, ViewChild, OnInit } from '@angular/core';
+import { Component, ElementRef, ViewChild, OnInit, DoCheck, OnChanges } from '@angular/core';
 import { single, multi } from './data';
+
 @Component({
-    selector: 'cdk-pie-chart',
+    selector: 'app-pie-chart',
     templateUrl: './pie-chart.component.html',
     styleUrls: ['./pie-chart.component.scss']
 })
-export class PieChartComponent implements OnInit {
+export class PieChartComponent implements OnInit, OnChanges, DoCheck {
     @ViewChild('ele') el: ElementRef;
 
     public single: any[];
@@ -29,10 +30,11 @@ export class PieChartComponent implements OnInit {
     }
 
     ngOnChanges(changes) {
-        // if(this.changes && this.changes.height) 
+        // if(this.changes && this.changes.height)
     }
+
     ngDoCheck() {
-        if (this.el.nativeElement.offsetWidth != this.width) {
+        if (this.el.nativeElement.offsetWidth !== this.width) {
             this.width = this.el.nativeElement.offsetWidth;
             this.ngOnInit();
         }
@@ -40,11 +42,10 @@ export class PieChartComponent implements OnInit {
 
     ngOnInit() {
         this.view = [this.el.nativeElement.offsetWidth, 235];
-        Object.assign(this, { single, multi })
+        Object.assign(this, { single, multi });
     }
 
     onSelect(event) {
         console.log(event);
     }
-
 }
