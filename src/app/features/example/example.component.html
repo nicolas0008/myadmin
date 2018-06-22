@@ -1,0 +1,7 @@
+<form [formGroup]="exampleForm" (ngSubmit)="onSubmit()">
+    <p>
+        Welcome to <input type="text" readonly formControlName="title">
+    </p>
+</form>
+
+<button (click)="getHttpExampleTitle()">Get HTTP Title example</button>

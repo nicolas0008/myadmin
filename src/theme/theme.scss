@@ -1,11 +1,11 @@
 @import '~@angular/material/theming';
-@import '../app/modules/auth/auth.component.scss';
-@import '../app/modules/core/sidemenu/sidemenu.component.scss';
-@import '../app/modules/core/sidemenu-item/sidemenu-item.component.scss';
-@import '../app/shared/dashboard-widget/dashcard/dashcard.component.scss';
-@import '../app/shared/dashboard-widget/profile-card/profile-card.component.scss';
-@import '../app/shared/dashboard-widget/round-progressbar/round-progressbar.component.scss';
-@import '../app/shared/dashboard-widget/sales-list/sales-list.component.scss';
+@import '../app/core/auth/auth.component.scss';
+@import '../app/core/sidemenu/sidemenu.component.scss';
+@import '../app/core/sidemenu/sidemenu-item/sidemenu-item.component.scss';
+@import '../app/components/dashboard-widget/dashcard/dashcard.component.scss';
+@import '../app/components/dashboard-widget/profile-card/profile-card.component.scss';
+@import '../app/components/dashboard-widget/round-progressbar/round-progressbar.component.scss';
+@import '../app/components/dashboard-widget/sales-list/sales-list.component.scss';
 $mat-light-theme-background: ( status-bar: map_get($mat-grey, 300), app-bar: map_get($mat-grey, 100), background: map_get($mat-indigo, 50), hover: rgba(black, 0.04), // TODO(kara): check style with Material Design UX
 card: white, dialog: white, disabled-button: $black-12-opacity, raised-button: white, focused-button: $black-6-opacity, selected-button: map_get($mat-grey, 300), selected-disabled-button: map_get($mat-grey, 400), disabled-button-toggle: map_get($mat-grey, 200), unselected-chip: map_get($mat-grey, 300), disabled-list-option: map_get($mat-grey, 200), );
 @include mat-core();

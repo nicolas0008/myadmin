@@ -5,16 +5,18 @@
 
 export const environment = {
     production: false,
+    example_url: 'https://randomuser.me/api/',
     firebase: {
-        apiKey: 'AIzaSyBwlk0KMM75nBsZ8L7j9cZ5N5x0fwqfBjg',
-        authDomain: 'newproject-5d731.firebaseapp.com',
-        databaseURL: 'https://newproject-5d731.firebaseio.com',
-        projectId: 'newproject-5d731',
-        storageBucket: 'newproject-5d731.appspot.com',
-        messagingSenderId: '737689833575'
+      apiKey: 'AIzaSyBwlk0KMM75nBsZ8L7j9cZ5N5x0fwqfBjg',
+      authDomain: 'newproject-5d731.firebaseapp.com',
+      databaseURL: 'https://newproject-5d731.firebaseio.com',
+      projectId: 'newproject-5d731',
+      storageBucket: 'newproject-5d731.appspot.com',
+      messagingSenderId: '737689833575'
     },
     mailApi: '/assets/list.json'
 };
+
 export const palete = {
     primary: '#D32F2F',
     accent: '#E65100',
@@ -28,4 +30,4 @@ export const palete = {
     tertiaryLight: '#9C27B0',
     quaternaryLight: '#673AB7',
     quinaryLight: '#3F51B5'
-}
+};
